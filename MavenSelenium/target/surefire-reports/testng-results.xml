@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17" started-at="2018-11-28T03:23:40Z" finished-at="2018-11-28T03:23:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17" started-at="2018-11-28T03:23:40Z" finished-at="2018-11-28T03:23:40Z">
+      <class name="com.MavenSelenium.product.google.GoogleHome">
+        <test-method status="PASS" signature="searchResultInGoogle()[pri:0, instance:com.MavenSelenium.product.google.GoogleHome@6fb554cc]" name="searchResultInGoogle" duration-ms="6" started-at="2018-11-28T08:53:40Z" finished-at="2018-11-28T08:53:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchResultInGoogle -->
+        <test-method status="PASS" signature="searchStringInGoogle()[pri:0, instance:com.MavenSelenium.product.google.GoogleHome@6fb554cc]" name="searchStringInGoogle" duration-ms="1" started-at="2018-11-28T08:53:40Z" finished-at="2018-11-28T08:53:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchStringInGoogle -->
+      </class> <!-- com.MavenSelenium.product.google.GoogleHome -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

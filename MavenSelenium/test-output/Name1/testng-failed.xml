@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Name1]">
+  <test name="google Home(failed)">
+    <classes>
+      <class name="com.MavenSelenium.product.google.GoogleHome">
+        <methods>
+          <include name="searchStringInGoogle"/>
+        </methods>
+      </class> <!-- com.MavenSelenium.product.google.GoogleHome -->
+    </classes>
+  </test> <!-- google Home(failed) -->
+  <test name="Google result(failed)">
+    <classes>
+      <class name="com.MavenSelenium.product.google.GoogleHome">
+        <methods>
+          <include name="searchResultInGoogle"/>
+        </methods>
+      </class> <!-- com.MavenSelenium.product.google.GoogleHome -->
+    </classes>
+  </test> <!-- Google result(failed) -->
+</suite> <!-- Failed suite [Name1] -->

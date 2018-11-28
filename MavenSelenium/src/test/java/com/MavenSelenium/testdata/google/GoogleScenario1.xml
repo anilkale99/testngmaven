@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Name1">
+<!-- =================================================================================== -->
+<!-- Login  -->
+<!-- =================================================================================== -->
+ 	
+ 
+    <test name="google Home">
+			<dataset name="Logindataset">
+				<data key="userName" value="anil"/>
+				<data key="userPassword" value="Test@123"/>
+				<data key="eventName" value="RA_"/>
+				<data key="ExtIDeventName" value="myExtEvent1"/>
+			</dataset>
+			<classes>
+				<class name="com.MavenSelenium.product.google.GoogleHome">
+					<methods>
+						<include name="searchStringInGoogle" />
+					</methods>
+				</class>
+			</classes>
+	</test>
+	
+	 <test name="Google result">
+			<dataset name="Logindataset">
+				<data key="mainMenuName" value="New UX"/>
+				<data key="subMenu" value="Manage RFx(s)"/>
+				<data key="eventName" ref="myExtEvent1"/>
+			</dataset>
+			<classes>
+				<class name="com.MavenSelenium.product.google.GoogleHome">
+					<methods>
+						<include name="searchResultInGoogle" />
+					</methods>
+				</class>
+			</classes>
+	</test>
+
+	
+	
+</suite>
+
