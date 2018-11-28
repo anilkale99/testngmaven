@@ -2,28 +2,13 @@ package com.MavenSelenium.product.google;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.MavenSelenium.core.BasePageSolvent;
-
-public class GoogleHome extends BasePageSolvent{
-		
-	
-	@Test
-	public void searchStringInGoogle(){//(String searchValue, WebDriver driver){
-		
-		System.out.println("In search string method1");
-		
-	}
-	
-	@Test
-	public void searchResultInGoogle(){//(String searchValue, WebDriver driver){
-		
-		System.out.println("In search result method2");
-		
-	}
+public class BasicSeleniumScript {
 	
 	@Test
 	public void testingFirefoxScript() throws InterruptedException{	
@@ -66,5 +51,38 @@ public class GoogleHome extends BasePageSolvent{
 		
 		
 	}
+	
+	
+	@Test
+	public void testMethod() throws InterruptedException{
+		System.setProperty("webdriver.gecko.driver", 
+				"D:\\Training\\TrainingContent\\SeleniumJars_Software"
+				+ "\\geckodriver-v0.18.0-win64\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("http://demo.automationtesting.in/Register.html");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@ng-model='FirstName']")).sendKeys("Anil");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@value='Movies']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@value='FeMale']")).click();
+		Thread.sleep(1000);
+		
+//		//case 1
+//		driver.findElement(By.xpath("//select[@id='Skills']")).click();
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//select[@id='Skills']/option[contains(text(),'Android')]")).click();
+		
+		
+//		//case 2
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//select[@id='Skills']/option[contains(text(),'Android')]")).click();
+		
+		//Case 3
+		WebElement ele = driver.findElement(By.xpath("//select[@id='Skills']"));
+		Select sel = new Select(ele);
+		sel.selectByVisibleText("Android");
 
+}
 }
