@@ -13,6 +13,8 @@ public class BasicSeleniumScript {
 	@Test
 	public void testingFirefoxScript() throws InterruptedException{	
 		
+		System.out.println("testing for devops");
+		
 		System.setProperty("webdriver.gecko.driver", 
 				"D:\\Training\\TrainingContent\\SeleniumJars_Software"
 				+ "\\geckodriver-v0.18.0-win64\\geckodriver.exe");
