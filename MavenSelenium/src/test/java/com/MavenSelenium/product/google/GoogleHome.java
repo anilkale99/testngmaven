@@ -6,9 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.MavenSelenium.core.BasePageSolvent;
 
-public class GoogleHome extends BasePageSolvent{
+
+public class GoogleHome {
 		
 	
 	@Test
